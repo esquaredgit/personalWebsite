@@ -8,11 +8,11 @@
         <meta name="keywords" content="personal blog, tech blog, health blog, biotechnology blog, medical blog, ethan eldridge, greensburg, indiana, oldenburg, batesville, indiana university, iu">
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body onload="write()">
         <header>
             <div class="container">
                 <div class="logo">
-                    <a href="index.html"><h1>esquared</h1></a>
+                    <a href="index.html"><h1>ethan eldridge</h1></a>
                 </div>
                 <nav>
                     <ul>
@@ -27,7 +27,7 @@
         <section id="showcase">
             <div class="container">
                 <img src="images/ethanMountainsCrop.jpeg" id="showcasePic">
-                <div id="picText"><h1>Hi, I'm Ethan!</h1></div>
+                <div id="picText"><span class="blink">|</span></div>
             </div>
         </section>
         <section id="about">
@@ -41,5 +41,42 @@
             <a href="https://www.instagram.com/ethan.eldr/" target="_blank"><img src="images/instagram.png"></a>
            <p>Copyright &copy; 2021, Ethan Eldridge</p> 
         </footer>
+        <script>
+            var i = 0;
+            var written = false;
+            var txt1 = "ethan eldridge";
+            var txt2 = "a master's student in computer science"; /* The text */
+            var txt3 = "a pre-medical student";
+            var txt4 = "an indiana hoosier";
+            var list = [txt1, txt2, txt3, txt4];
+            var speed = 90; /* The speed/duration of the effect in milliseconds */
+            // function write() {
+            //     if (i < txt1.length) {
+            //         document.getElementById("picText").innerHTML = "<span id='greeting'>Hi, I'm </span>" + txt1.slice(0, i+1) + "<span class='blink'>|</span>";
+            //         i++;
+            //         setTimeout(write, speed);
+            //     }
+            // }
+            function write() {
+                if (i < txt1.length) {
+                    document.getElementById("picText").innerHTML = "<span id='greeting'>hi, i'm </span>" + txt1.slice(0, i+1) + "<span class='blink'>|</span>";
+                    i++;
+                    setTimeout(write, speed);
+                }
+            }
+            function remove() {
+                while (i > 0) {
+                    document.getElementById("picText").innerHTML -= txt.charAt(i);
+                    i--;
+                    setTimeout(writeRemove, speed);
+                }
+            }
+
+            // Repeat indefinitely:
+                // for phrase in phrases:
+                    // Write out phrase
+                    // Cursor blinks for a bit
+                    // Delete phrase
+        </script>
     </body>
 </html>

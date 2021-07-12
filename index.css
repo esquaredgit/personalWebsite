@@ -32,6 +32,7 @@ header li{
     float:left;
     display:inline;
     padding: 0 20px 0 20px;
+    margin: 0 5px 0 5px;
     text-transform: uppercase;
     font-size: large;
 }
@@ -43,10 +44,8 @@ header .current a{
 }
 
 nav a:hover{
-    border:2px solid rgb(50, 50, 207);
     color: black;
-    padding: 5%;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 header .logo{
@@ -64,7 +63,11 @@ header nav{
 #showcase .container {
     text-align: center;
     position: relative;
-    color: rgb(209, 212, 243);
+    color: whitesmoke;
+}
+
+#greeting {
+    color: black;
 }
 
 #showcasePic{
@@ -74,12 +77,25 @@ header nav{
 
 #picText{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 35%;
-    transform: translate(-25%, -50%);
+    transform: translate(-0%, -50%);
     font-size: 450%;
-    text-shadow: 4px 0px darkgray;
 }
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {visibility: hidden;}
+}
+
+@-webkit-keyframes blink-animation {
+    to {visibility: hidden;}
+}
+
 
 /* About */
 #about{
@@ -87,7 +103,10 @@ header nav{
     height: auto;
     text-align: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    margin: 5px auto 5px auto;
 }
+
+
 
 /* Footer */
 footer{
