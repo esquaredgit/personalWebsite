@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Global */
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Header and Nav */
+header{
+    padding: 10px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    margin: 0 0 10px 0;
+}
+
+
+header ul{
+    margin:0;
+    padding:0;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+
+header .current a{
+    color: rgb(50, 50, 207);
+    font-weight: bold;
+}
+
+nav a:hover{
+    border:2px solid rgb(50, 50, 207);
+    color: black;
+    padding: 5%;
+    font-weight: lighter;
+}
+
+header .logo{
+    float: left;
+}
+
+
+header nav{
+    float: right;
+    margin-top: 35px;
+}
+
+/* Showcase */
+
+#showcase .container {
+    text-align: center;
+    position: relative;
+    color: rgb(209, 212, 243);
+}
+
+#showcasePic{
+    width:100%;
+    height:auto;
+}
+
+#picText{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-25%, -50%);
+    font-size: 450%;
+    text-shadow: 4px 0px darkgray;
+}
+
+/* About */
+#about{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin: 10px;
+}
+
+
+@media(max-width: 768px){
+    /*No float in the header and nav*/
+    /*Center everything*/
+    /*width full*/
+
+    /**/
+}

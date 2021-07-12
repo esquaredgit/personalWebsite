@@ -2,50 +2,44 @@
 <html>
     <head>
         <title>Ethan Eldridge | Welcome</title>
+        <meta name="viewport" content="width=device-width">
         <meta name="description" content="Personal Website for Ethan Eldridge"> 
+        <meta name="author" content="Ethan Eldridge">
         <meta name="keywords" content="personal blog, tech blog, health blog, biotechnology blog, medical blog, ethan eldridge, greensburg, indiana, oldenburg, batesville, indiana university, iu">
-        <style>
-            #main-header {
-                text-align: center;
-                background-color: navy;
-                color: white;
-                padding: 10px;
-            }
-            #main-footer {
-                text-align: center;
-                font-size: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header id="main-header">
-            <h1>Ethan's Website</h1>
-        </header>
-        <section>
-            <article>
-                <h3>Blog Post One</h3>
-                <small>by Ethan Eldridge, 7/7/21</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eaque consequatur exercitationem labore optio incidunt possimus amet molestias consectetur impedit eveniet ex fugiat vitae minima voluptatibus atque, eum doloribus et?</p>
-                <h3>Blog Post Two</h3>
-                <small>by Ethan Eldridge, 7/7/21</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eaque consequatur exercitationem labore optio incidunt possimus amet molestias consectetur impedit eveniet ex fugiat vitae minima voluptatibus atque, eum doloribus et?</p>
-                <h3>Blog Post Three</h3>
-                <small>by Ethan Eldridge, 7/7/21</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eaque consequatur exercitationem labore optio incidunt possimus amet molestias consectetur impedit eveniet ex fugiat vitae minima voluptatibus atque, eum doloribus et?</p>
-            </article>
-            <aside> 
-                <h4>Categories</h4>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><h1>esquared</h1></a>
+                </div>
                 <nav>
                     <ul>
-                        <li>Tech posts</li>
-                        <li>Medicine posts</li>
-                        <li>Misc posts</li>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </aside>
+            </div>
+        </header>
+        <section id="showcase">
+            <div class="container">
+                <img src="images/ethanMountainsCrop.jpeg" id="showcasePic">
+                <div id="picText"><h1>Hi, I'm Ethan!</h1></div>
+            </div>
         </section>
-        <footer id="main-footer">
-            Copyright &copy; 2021, Ethan Eldridge
+        <section id="about">
+            <div class="container">
+                <p>I'm a Master's student in Computer Science at Indiana University. Feel free to take a look around!</p>
+            </div>
+        </section>
+        <footer>
+            <a href="https://github.com/esquaredgit" target="_blank"><img src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/ethan-eldridge-a55718120/" target="_blank"><img src="images/linkedin.png"></a>
+            <a href="https://www.instagram.com/ethan.eldr/" target="_blank"><img src="images/instagram.png"></a>
+           <p>Copyright &copy; 2021, Ethan Eldridge</p> 
         </footer>
     </body>
 </html>
