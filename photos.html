@@ -12,7 +12,7 @@
         <header>
             <div class="container">
                 <div class="logo">
-                    <a href="index.html"><h1>ethan eldridge<span style="color:rgb(86, 86, 230)">|</span></h1></a>
+                    <a href="index.html"><h1>ethan eldridge<span style="color:rgb(86, 86, 230)" class="blink">|</span></h1></a>
                 </div>
                 <nav>
                     <ul>
@@ -20,34 +20,17 @@
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="resume.html">Resume</a></li>
-                        <li><a href="photos.html">Photos</a></li>
-                        <li class="current"><a href="contact.html">Contact</a></li>
+                        <li class="current"><a href="photos.html">Photos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section id="contactInfo">
-            <container id="email">
-                <a href = "mailto:etmeldr@iu.edu"><h1 id="emailText"></h1></a>
-            </container>
-        </section>
         <footer>
             <a href="https://github.com/esquaredgit" target="_blank"><img src="images/github.png"></a>
             <a href="https://www.linkedin.com/in/ethan-eldridge-a55718120/" target="_blank"><img src="images/linkedin.png"></a>
             <a href="https://www.instagram.com/ethan.eldr/" target="_blank"><img src="images/instagram.png"></a>
            <p>Copyright &copy; 2021, Ethan Eldridge</p> 
         </footer>
-        <script>
-            var txt1 = "etmeldr@iu.edu";
-            var i = 0;
-            var speed = 90; /* The speed/duration of the effect in milliseconds */
-            function writeRemove() {
-                if (i < txt1.length) {
-                    document.getElementById("emailText").innerHTML = txt1.slice(0, i+1) + "<span class='blink'>|</span>";
-                    i++;
-                    setTimeout(writeRemove, speed);
-                }
-            }
-        </script>
     </body>
 </html>
