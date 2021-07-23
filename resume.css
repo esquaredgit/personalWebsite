@@ -1,19 +1,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: whitesmoke;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
   
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
 
 /* Global */
 .container{
@@ -70,31 +59,6 @@ header nav{
     margin-top: 35px;
 }
 
-/* Showcase */
-
-#showcase .container {
-    text-align: center;
-    position: relative;
-    color: rgb(86, 86, 230);
-    padding: 100px 0 100px 0;
-}
-
-#greeting {
-    color: black;
-}
-
-#showcasePic{
-    width:100%;
-    height:auto;
-}
-
-#picText{
-    /* position: absolute;
-    top: 45%;
-    left: 35%;
-    transform: translate(-0%, -50%); */
-    font-size: 450%;
-}
 
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
@@ -123,21 +87,7 @@ header nav{
     box-shadow: 0px 2px 5px #353535;
 }
 
-/* Contact Info */
-#contactInfo a {
-    color: rgb(86, 86, 230);
-}
 
-#contactInfo a:hover {
-    color: black;
-}
-
-#email {
-    text-align: center;
-    color: rgb(86, 86, 230);
-    padding: 100px 0 100px 0;
-    font-size: 450%;
-}
 
 /* Footer */
 footer{
