@@ -43,52 +43,6 @@
             <a href="https://www.instagram.com/ethan.eldr/" target="_blank"><img src="images/instagram.png"></a>
            <p>Copyright &copy; 2021, Ethan Eldridge</p> 
         </footer>
-        <script>
-            var txt1 = "ethan eldridge";
-            var txt2 = "a master's student in computer science"; /* The text */
-            var txt3 = "a pre-medical student";
-            var txt4 = "an indiana hoosier";
-            var txt5 = "a HUGE fan of movies";
-            var txt6 = "a kick-a** cook";
-            const phrases = [txt1, txt2, txt3, txt4];
-            var i = 0;
-            var speed = 90; /* The speed/duration of the effect in milliseconds */
-            function write() {
-                if (i < txt6.length) {
-                    document.getElementById("picText").innerHTML = "<span id='greeting'>hi, i'm </span>" + txt6.slice(0, i+1) + "<span class='blink'>|</span>";
-                    i++;
-                    setTimeout(write, speed);
-                }
-            }
-            function remove() {
-                if (i >= 0) {
-                    i--;
-                    document.getElementById("picText").innerHTML = "<span id='greeting'>hi, i'm </span>" + txt6.slice(0, i+1) + "<span class='blink'>|</span>";
-                    setTimeout(remove, speed);
-                }
-            }
-
-            function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));}
-
-            function writeRemove(){
-                write();
-                sleep(5000).then(() => { remove(); });
-            }
-
-            // function writeRemove() {
-            //     for (let index = 1; index < phrases.length; index++) {
-            //         writeFlow(phrases[index]);
-            //         sleep(2000);
-            //     }
-            // }
-            
-            
-
-            // Repeat indefinitely:
-                // for phrase in phrases:
-                    // Write out phrase
-                    // Cursor blinks for a bit
-                    // Delete phrase
-        </script>
+        <script src="index.js"></script>
     </body>
 </html>
